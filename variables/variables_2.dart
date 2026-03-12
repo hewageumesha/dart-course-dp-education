@@ -37,4 +37,23 @@ void main() {
   final dateTimeNow = DateTime.now();
   print(dateTimeNow);
   
+  final videoTitle = 'Flutter for beginners';
+  print(videoTitle);
+  // videoTitle = 'Dart for Beginners';  The final variable can only be set once
+
+  var fullTitle = 'Flutter and Dart';
+  print(fullTitle.runtimeType);
+  
+  var age = 10;
+  print(age.runtimeType);
+  
+  var d;
+  d = 'Flutter for Beginners';
+  print(d);
+  
+  dynamic c = 120;
+  print(c.runtimeType);
+  
+  c = 'Samin';
+  print(c.runtimeType);
 }
