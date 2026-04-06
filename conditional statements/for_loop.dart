@@ -41,4 +41,36 @@ void main() {
   for (int i = 0; i < title.length; i++) {
     print(title[i]);
   }
+
+  // give the product of the list elements
+  List<int> numbersList = [1, 2, 3, 4, 5];
+  int product = 1;
+
+  for (int i=0; i<numbersList.length; i++) {
+    product *= numbersList[i];
+  }
+  print('Product: $product');
+
+  // nested for loop
+  List<List<int>> nestedList = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+  ];
+  for (int i = 0; i < nestedList.length; i++) {
+    for (int j = 0; j < nestedList[i].length; j++) {
+      print(nestedList[i][j]);
+    }
+  }
+
+  List<List<String>> nestedStringList = [
+    ['Flutter', 'Dart'],
+    ['Java', 'Kotlin'],
+    ['Python', 'JavaScript']
+  ];
+  for (int i = 0; i < nestedStringList.length; i++) {
+    for (int j = 0; j < nestedStringList[i].length; j++) {
+      print(nestedStringList[i][j]);
+    }
+  }
 }
