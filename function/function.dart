@@ -7,8 +7,13 @@ void printDetails(String name, int age) {
 void printHelloWorld() {
   print('Hello World');
 }
+
+// arrow function
+int addTwoNumbers(int a, int b) => a + b;
+
 void main() {
   printHelloWorld();
   printDetails('John', 30);
   printDetails('Jane', 25);
+  print(addTwoNumbers(5, 10));
 }
